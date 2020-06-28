@@ -1,0 +1,26 @@
+/* vue过度动画 */
+.fade-enter-active, 
+.fade-leave-active {  transition: opacity 0.28s;}
+.fade-enter, 
+.fade-leave-active {  opacity: 0;}
+.fade-transform-leave-active, 
+.fade-transform-enter-active {  transition: all .5s;}
+.fade-transform-enter {  opacity: 0;  transform: translateX(-30px);}
+.fade-transform-leave-to {  opacity: 0;  transform: translateX(30px);}
+.breadcrumb-enter-active,
+.breadcrumb-leave-active {  transition: all .5s;}
+.breadcrumb-enter,
+.breadcrumb-leave-active {opacity: 0;transform: translateX(20px);}
+.breadcrumb-move {transition: all .5s;}
+.breadcrumb-leave-active {position: absolute;}
+.marsk-enter-active, 
+.marsk-leave-active {transform: translateX(-10px); transition: all .3s ease; }
+.marsk-enter, .marsk-leave-to { transform: translateX(10px);-webkit-transform: translateX(10px); -moz-transform: translateX(10px); opacity: 0; }
+.lineTo-enter-active, 
+.lineTo-leave-active {transform: translateX(-100%); transition: all .5s ease; }
+.lineTo-enter, 
+.lineTo-leave-to { transform: translateX(100%);-webkit-transform: translateX(100%); -moz-transform: translateX(100%); opacity: 0; }
+.bounce-enter-active {animation: bounce-in .5s;}
+.bounce-leave-active {animation: bounce-in .5s reverse;}
+
+@keyframes bounce-in {0% {transform: scale(0);} 50% {transform: scale(1.5);}100% {transform: scale(1);}}

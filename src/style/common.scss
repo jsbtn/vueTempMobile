@@ -1,0 +1,145 @@
+/* base.css*/
+.flex {display: flex;align-items: center;}
+.mgLf10 {margin-left: 10px;}
+::-webkit-scrollbar {width: 8px;height: 8px;}
+::-webkit-scrollbar-thumb {background-color: #bdbdbd;background-clip: padding-box;min-height: 8px;border-radius: 20px;}
+.fw {font-family: "Microsoft Yahei" "SimHei";}
+.fa {font-family: Arial;}
+.ft {font-family: Tahoma;}
+.fs {font-family: "SimSun";}
+.clear {clear: both;}
+.dn {display: none;}
+.db {display: block;}
+.df {display: flex;}
+.di {display: inline;}
+.dib {display: inline-block !important}
+.oh {overflow: hidden;}
+.ofy {overflow-y: scroll;}
+.bf {background: #fff;}
+.bf7 {background: #f7f7f7;}
+.be {background: #eee;}
+.bf2 {background: #f2f2f2;}
+.fwb {font-weight: bold;}
+.fwn {font-weight: normal;}
+.f10 {font-size: 10px;}
+.f12 {font-size: 12px;}
+.f11 {font-size: 11px;}
+.f13 {font-size: 13px;}
+.f14 {font-size: 14px;}
+.f15 {font-size: 15px;}
+.f17 {font-size: 17px;}
+.f16 {font-size: 16px;}
+.f18 {font-size: 18px;}
+.f20 {font-size: 20px;}
+.f22 {font-size: 22px;}
+.f24 {font-size: 24px;}
+.f26 {font-size: 26px;}
+.f28 {font-size: 28px;}
+.f30 {font-size: 30px;}
+.f40 {font-size: 40px;}
+.f50 {font-size: 50px;}
+.c9 {color: #999;}
+.c3 {color: #333;}
+.c1 {color: #111;}
+.c2 {color: #222 !important;}
+.c4 {color: #444;}
+.c5 {color: #555;}
+.c6 {color: #666;}
+.c7 {color: #777;}
+.c8 {color: #888;}
+.c0 {color: #000;}
+.cc {color: #ccc;}
+.cb {color: #bbb;}
+.cf {color: #fff;}
+.c1414 {color: #141414;}
+.cf5 {color: #f5f5f5;}
+.c4835 { color: #484354;}
+.cred {color: red;}
+.cgreen {color: green;}
+.cblue {color: blue}
+.corange {color: orange;}
+.BG9 {background-color: #999 !important}
+/* 弹性列布局 */
+/* 弹性盒子 */
+.flex-center {height: inherit;display: flex;align-items: center;justify-content: center;}
+.flex-sb {display: flex;justify-content: space-between;}
+.flex-c-sb {height: inherit;display: flex;flex-direction: column;justify-content: space-between;}
+/* 12栅栏弹性布局 */
+.flex-row {display: flex;flex-wrap: wrap;}
+.row-col-1 {width: 8.333333%;}
+.row-col-2 {width: 16.666666%;}
+.row-col-3 {width: 25%;}
+.row-col-4 {width: 33.333333%;}
+.row-col-5 {width: 41.666666%;}
+.row-col-6 {width: 50%;}
+.row-col-7 {width: 58.333333%;}
+.row-col-8 {width: 66.666666%;}
+.row-col-9 {width: 75%;}
+.row-col-10 {width: 83.3333333%;}
+.row-col-11 {width: 91.6666666%;}
+.row-col-12 {width: 100%;}
+/* 行布局 */
+.por {position: relative;}
+.poa {position: absolute;}
+.pof {position: fixed;}
+.poi {cursor: pointer;}
+.tr {text-align: right;}
+.tl {text-align: left;}
+.tc {text-align: center;}
+.fr {float: right;}
+.fl {float: left;}
+.mc {margin: 0 auto;display: block;}
+.ovf {overflow: hidden;}
+.mt {margin-top: 10px;}
+.mb {margin-bottom: 10px;}
+.ml {margin-left: 10px;}
+.mr {margin-right: 10px;}
+.mt20 {margin-top: 20px;}
+.mb20 {margin-bottom: 20px;}
+.ml20 {margin-left: 20px;}
+.mr20 {margin-right: 20px;}
+.p10 {padding: 10px;}
+.pt5 {padding: 5px;}
+.pt {padding-top: 10px;}
+.pb {padding-bottom: 10px;}
+.pl {padding-left: 10px;}
+.pr {padding-right: 10px;}
+.pb0 {padding-bottom: 0px;}
+.clearfix::before,.clearfix::after {display: table;line-height: 0;content: "";}
+.clearfix::after {clear: both;}
+/* hover 类 */
+.h-act:active {opacity: 0.78;}
+/* 字类 */
+.fwd {font-weight: bold;}
+.f400 {font-weight: 400;}
+/* 行省略 */
+.ovf-line1 {white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+.ovf-line2 {display: -webkit-box;-webkit-box-orient: vertical;overflow: hidden;text-overflow: ellipsis;-webkit-line-clamp: 2;}
+.ovf-line3 {display: -webkit-box;-webkit-box-orient: vertical;overflow: hidden;text-overflow: ellipsis;-webkit-line-clamp: 3;}
+.ovf-line4 {display: -webkit-box;-webkit-box-orient: vertical;overflow: hidden;text-overflow: ellipsis;-webkit-line-clamp: 4;}
+.bborder1 {border-bottom: 1px solid #999;}
+.pad1020 {padding: 10px 20px !important;}
+.w180x {width: 180px !important;}
+.w100x {width: 100px !important;}
+.w80x {width: 80px !important;}
+.w50x {width: 50px !important;}
+.w300x {width: 300px !important;}
+.w400x {width: 400px !important;}
+.w500x {width: 500px !important;}
+.w80p {width: 80% !important;}
+.w50p {width: 50% !important;}
+.w100p {width: 100% !important;}
+.wh100p {width: 100%;height: 100%;}
+
+//border 
+.border {border: 1px solid #f1f1f1;}
+.border-b {border-bottom: 1px solid #f5f5f5;}
+.border-t {border-top: 1px solid #f1f1f1;}
+.border-l {border-left: 1px solid #f1f1f1;}
+.border-r {border-right: 1px solid #f1f1f1;}
+*[disableds] {background: #f1f1f1;}
+.pb {padding-bottom: 10px;}
+.vat {vertical-align: top;}
+.vam {vertical-align: middle;}
+.vab {vertical-align: bottom;}
+.radius100 {border-radius: 100%;}
