@@ -13,7 +13,7 @@ router.beforeEach(async (to, from, next) => {
   if (store.getters.token == "" || store.getters.token == null ) { // 首次登录
     if (to.matched.length != 0) {
       if (getLoginParams().token) {
-        await store.dispatch('login', getLoginParams());
+        // await store.dispatch('login', getLoginParams());
         next();
       } else {
         next();

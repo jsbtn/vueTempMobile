@@ -23,39 +23,3 @@ export function emailLogin(data) {
     data
   });
 }
-
-// 文章点赞接口
-export function addThumbs(data) {
-  return request({
-    url: '/api/addThumbs/' + data.id,
-    method: 'post',
-    resTost: "点赞成功",
-  });
-}
-
-// 文章点赞接口
-export function cancelThumbs(data) {
-  return request({
-    url: '/api/cancelThumbs/' + data.id,
-    method: 'post',
-    resTost: "取消点赞",
-  });
-}
-
-// 新增用户关注
-export function addFollow(data) {
-  return request({
-    url: '/api/addFollow/' + data.id,
-    method: 'post',
-    resTost: "关注成功",
-  });
-}
-
-// 取消关注
-export function delFollow(data) {
-  return request({
-    url: '/api/delFollow/' + data.id,
-    method: 'post',
-    resTost: "取消关注",
-  });
-}

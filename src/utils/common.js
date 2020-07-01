@@ -1,6 +1,5 @@
 import Cookies from 'js-cookie';
 import { routes } from '@/router';
-import { addFollow , delFollow , addThumbs, cancelThumbs } from "@/api/index"
 /**
  * @设置rem
  * 100px 750 
@@ -28,9 +27,9 @@ export const setRem = () => {
  */
 export const requestData = (obj) => {
   const params = new URLSearchParams()
-  for (const variable in obj) {
-    if (obj['' + variable] !== '' && obj['' + variable] !== undefined && obj['' + variable] !== null) {
-      params.append('' + variable, obj['' + variable])
+  for (const v in obj) {
+    if (obj['' + v] !== '' && obj['' + v] !== undefined && obj['' + v] !== null) {
+      params.append('' + v, obj['' + v])
     }
   }
   return params
@@ -200,40 +199,4 @@ export const getLoginParams = () => {
       }
     }
   }
-}
-
-/**
- * 
- * @param {'add'|'del'} type 
- * @param {number} id 
- */
-export const focus = (type,id) =>{
-  let api = {'add':addFollow,'del':delFollow}
-  return new Promise ((reslove,reject)=>{
-    api[type]({id}).then((res) => {
-        if(res.code == 200){
-          reslove(res)
-        }else{
-          reject(res);
-        }
-    })
-  })
-}
-
-/**
- * 
- * @param {'add'|'del'} type 
- * @param {number} id 
- */
-export const thumbs = (type,id) =>{
-  let api = {'add':addThumbs,'del':cancelThumbs}
-  return new Promise ((reslove,reject)=>{
-    api[type]({id}).then((res) => {
-        if(res.code == 200){
-          reslove(res)
-        }else{
-          reject(res);
-        }
-    })
-  })
 }

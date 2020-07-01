@@ -1,28 +1,18 @@
 <template>
   <div class='page'>
-    <div class="tc c3 title">我的</div>
     <div class="userBanner flex">
-        <img src=".././assets/icon/defulutUser.png" class="userImg" />
-        <span class="userName">秋天的树叶</span>
+      <img src=".././assets/icon/defulutUser.png" class="userImg" />
+      <span class="userName">秋天的树叶</span>
     </div>
     <div @click="layOut" class="big_btn">退出登录</div>
   </div>
 </template>
 
 <script>
-import { NavBar, Form, Field, Button , Icon , Toast} from 'vant';
 export default {
-  name: 'home',
-  components: {
-    'van-nav-bar': NavBar, 
-    'van-form': Form,
-    'van-field': Field,
-    'van-icon':Icon,
-    'van-button': Button,
-  },
+  name: 'user',
   data() {
     return {
-
     };
   },
   mounted() {
@@ -30,14 +20,6 @@ export default {
   methods: {
     getList(){
       let params = {}
-    },
-    selfToPath(type){
-      this.$router.push({
-        path:"/userFocus",
-        query:{
-          type
-        }
-      })
     },
     layOut(){
       this.$router.push({

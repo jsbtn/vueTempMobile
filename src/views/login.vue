@@ -6,40 +6,33 @@
       <div class="form">
         <h3 class="_title">登录</h3>
         <div class="inputBox">
-            <!-- <img class="icon" src="../assets/icon/phone.png" /> -->
-            <input v-model="loginQuery.email" class="input" minlength="14" placeholder="请输入账号" type="text"/>
+          <input v-model="loginQuery.email" class="input" minlength="14" placeholder="请输入账号" type="text"/>
         </div>
         <div class="inputBox">
-            <!-- <img class="icon" src="../assets/icon/password.png" /> -->
-            <input v-model="loginQuery.password" class="input" maxlength="16" placeholder="请输入密码" type="password"/>
+          <input v-model="loginQuery.password" class="input" maxlength="16" placeholder="请输入密码" type="password"/>
         </div>
-        <div class="flex-sb info-log">
+        <!-- <div class="flex-sb info-log">
           <span>忘记密码?</span>
           <span>注册</span>
-        </div>
+        </div> -->
         <div @click="login" noPlain class="big_btn">登录</div>
       </div>
   </div>
 </template>
 
 <script>
-import { NavBar, Form, Field, Button , Icon , Notify  ,Toast} from 'vant';
-import { emailLogin } from '@/api';
+import { Icon } from 'vant';
 import { verify } from '@/utils/common'
 export default {
   name: 'home',
   components: {
-    'van-nav-bar': NavBar,
-    'van-form': Form,
-    'van-field': Field,
-    'van-button': Button,
     'van-icon':Icon,
   },
   data() {
     return {
       loginQuery:{
-        email:"1@qq.com", 
-        password:"a123456789"
+        email:"", 
+        password:""
       }
     };
   },

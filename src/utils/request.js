@@ -23,7 +23,7 @@ service.interceptors.request.use(
     }
     config.headers = {
       "Content-Type": config.contentType || "application/x-www-form-urlencoded",
-      "Cookie": "edu_session="+ getToken()
+      "token": getToken()
     };
     config.data = config.contentType ? config.data : requestData(config.data)
     config.params = config.contentType ? config.params : requestData(config.params)
@@ -55,6 +55,7 @@ service.interceptors.response.use(
         // 清除本地token 跳转首页
         store.dispatch('setToken', '');
         setToken("");
+        router.replace('/login')
         return Promise.resolve(res);
       }else{
         return Promise.reject(response);

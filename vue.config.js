@@ -1,4 +1,3 @@
-const webpack = require("webpack");
 module.exports = {
   publicPath: './',
   // devServer: {
@@ -7,7 +6,7 @@ module.exports = {
   //   hotOnly: false,
   //   proxy: {
   //     "/api": {
-  //       target: "http://172.17.0.193",
+  //       target: "http://127.0.0.1",
   //       changOrigin: true,
   //       pathRewrite: {
   //         "^/api": "/api"
@@ -36,6 +35,6 @@ module.exports = {
   },
   // 配置es6 兼容
   chainWebpack: config => {
-    config.entry("main").add("babel-polyfill"); // main是入口js文件
+    config.entry("main").add("babel-polyfill"); 
   }
 };
