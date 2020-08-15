@@ -1,25 +1,22 @@
-/** 
- * @resTost ：操作提示 ? Boolean || String
- * @message ：loading提示 ? String
- */
+
 import request from '@/utils/request';
 
-// 静默授权登录
-export function login(data) {
+// 新增班访对象
+export function visitor(data) {
   return request({
-    url: '/api/authorization',
-    method: 'post',
-    message: "登录中",
+    url: '/saoma/common/visitor',
+    method: 'POST',
+    contentType:"application/json",
+    message: "提交中",
     data
   });
 }
 
-// 账号登录
-export function emailLogin(data) {
+// 查询老师
+export function selectEmp(params) {
   return request({
-    url: '/api/login',
-    method: 'post',
-    message: "登录中",
-    data
+    url: '/saoma/common/selectEmp',
+    method: 'GET',
+    params
   });
 }

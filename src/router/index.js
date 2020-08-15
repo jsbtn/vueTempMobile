@@ -12,20 +12,32 @@ Vue.use(VueRouter);
 export const routes = [
   {
     path: '/',
-    name: 'login',
-    component: () => import('@/views/login.vue'),
-    meta:{ title:'登陆' }
+    name: 'index',
+    component: () => import('@/views/index.vue'),
+    meta:{ title:'访客信息录入' }
+  },
+  { 
+    path: '/info',
+    name: 'info',
+    component: () => import('@/views/info.vue'),
+    meta: { title: '提交信息' }
+  },
+  { 
+    path: '/weCode',
+    name: 'weCode',
+    component: () => import('@/views/code.vue'),
+    meta: { title: '二维码' }
   },
   { 
     path: '/404',
     name: '404',
     component: () => import('@/views/404.vue'),
     meta: { title: '404' }
-  }
+  },
 ]
 
 const router = new VueRouter({
-  routes:[...tabBars,...routes]
+  routes
 })
 
 export default router

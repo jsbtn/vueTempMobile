@@ -7,6 +7,20 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
+    appList: { //app列表
+      'banxue': {
+        apk: "http://phpapi.wwwwwedu.com/index/index/downloadApk?type=1",
+        ios: "https://apps.apple.com/cn/app/id1518447455",
+        name:"办学人",
+        icon:"",
+      },
+      'teacher': {
+        apk: "http://phpapi.wwwwwedu.com/index/index/downloadApk?type=2",
+        ios: "https://apps.apple.com/cn/app/id1519707666",
+        name:"教师",
+        icon:"",
+      }
+    },
     token:getToken()
   },
   mutations: {

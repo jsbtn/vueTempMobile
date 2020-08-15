@@ -6,7 +6,8 @@ import { Toast } from 'vant';
 import store from '@/store'
 
 const service = axios.create({
-  timeout: 15000
+  // baseURL: 'http://218.244.149.172:8090',
+  timeout: 15000,
 });
 let resTost = '' ;
 service.interceptors.request.use(
@@ -39,7 +40,7 @@ service.interceptors.response.use(
     Toast.clear();
     if (response.status == 200) {
       const res = response.data;
-      if (res.code === 200) { 
+      if (res.code === 200 || res.status === 200) { 
         if(resTost){
           let msg = typeof resTost == 'boolean' ? res.msg : resTost ;
           Toast(msg) ;
